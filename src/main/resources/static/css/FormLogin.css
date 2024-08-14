@@ -1,0 +1,13 @@
+CSS
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.form-control {
+    padding-right: 30px; /* Espaço para o ícone do olho */
+}

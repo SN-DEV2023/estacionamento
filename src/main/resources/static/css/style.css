@@ -1,0 +1,19 @@
+
+body {
+    background-image: url('/images/planodefundo.jpeg');
+    background-size: cover;
+    background-attachment;
+
+}
+#navbar-example2 {
+    border-radius: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    color:5483B3;
+
+  }

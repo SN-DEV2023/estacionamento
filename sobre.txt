@@ -1,0 +1,53 @@
+    Visão Geral do Estacionamento:
+        Número total de vagas.
+        Vagas ocupadas e vagas disponíveis em tempo real.
+        Estatísticas diárias, semanais e mensais sobre a ocupação.
+
+    Gestão de Reservas:
+        Lista de reservas atuais.
+        Capacidade de adicionar, editar ou cancelar reservas.
+        Calendário de reservas futuras.
+
+    Monitoramento de Entrada e Saída:
+        Registro de entrada e saída de veículos.
+        Sistema de reconhecimento de placas para automatizar o processo.
+        Histórico de atividades.
+
+    Controle de Pagamentos:
+        Registro de pagamentos efetuados.
+        Geração de faturas para clientes.
+        Configurações de preços e tarifas.
+
+    Gestão de Clientes:
+        Lista de clientes registrados.
+        Detalhes do perfil do cliente.
+        Comunicação direta com os clientes.
+
+    Relatórios e Estatísticas:
+        Relatórios financeiros.
+        Estatísticas de ocupação.
+        Análise de tendências.
+
+    Configurações do Sistema:
+        Configurações de preferências do estacionamento.
+        Controle de usuários e permissões.
+
+    Notificações e Alertas:
+        Receber alertas sobre reservas, pagamentos ou eventos importantes.
+        Notificações automáticas para clientes.
+
+    Suporte ao Cliente:
+        Sistema de tickets para atender a consultas e reclamações.
+        FAQ ou seção de ajuda.
+
+    Integração com Outros Sistemas:
+        Integração com sistemas de pagamento.
+        Sincronização com sistemas de segurança.
+
+
+
+Para o cliente que irá fazer o aluguel no plano de estacioanamento, ele não precisa saber quantas vagas possuim no estacionamento.
+Irá somente alugar e os funcionarios colocarão nos lugares disponiveis pois não haverá necessidade de algo diferente
+
+Selecione o plano que você quer> valide-o> dar como compra feita
+Só vai precisar saber quantas vagas possuiem no estacionamento e quanto tempo foi alugado para estar disponivel

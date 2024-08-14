@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Estacionamento</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Cadastro</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/cliente">Cliente</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/administrador">Administrador</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/saibamais">Saiba mais</a>
+
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container  ">
+        <div class="row"><p><a href="#" class="text-white ">Pesquise por estacionamentos perto de você</a></p></div>
+        <div class="row">
+            <div class="col-md-10">
+
+                <input class="form-control me-3" id="1">
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+    <div class="m-4 pb-4"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/semana.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Semana:</h5>
+                        <p class="card-text">Alugue por uma semana e tenha a tranquilidade de um estacionamento seguro,
+                            sem preocupações diárias. Ganhe tempo e evite buscas constantes por vagas.
+                            Uma semana de conveniência e segurança.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/mes.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mês:</h5>
+                        <p class="card-text">Estabilidade e economia em um aluguel mensal de estacionamento.
+                            Organize seu cotidiano com acesso fácil e seguro.
+                            Tarifas vantajosas tornam essa opção uma escolha inteligente a longo prazo.
+                            Mais conforto é o que oferecemos.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/ano.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ano</h5>
+                        <p class="card-text">Escolha o aluguel anual para segurança e comodidade duradouras. Uma base
+                            sólida para suas atividades diárias, proporcionando tranquilidade contínua.
+                            O aluguel anual é ideal para sua rotina.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<main>
+
+
+    <div class="container ">
+        <div class="plataforma-base-moldura pr-2">
+            <div class="plataforma-base-principal p-2">
+                <div class="m-5 pb-5"></div>
+                <div class="card">
+                    <h2 class="text-center mb-4">Tabela de Preços</h2>
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h3 class="text-center">Horas </h3>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h3 class="text-center">Semanal</h3>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <h3 class="text-center">Mensal</h3>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h3 class="text-center">Anual</h3>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered border-primary table-hover">
+
+                        <thead>
+                        <tr>
+                            <th scope=" col">Horas</th>
+                            <th scope=" col">Semana</th>
+                            <th scope="col">Mês</th>
+                            <th scope=" col">Ano</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope=" col-sm-4">3 horas</th>
+                            <td> R$ 150,00</td>
+                            <td> R$ 200,00</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <th scope=" col-sm-4">6 horas</th>
+                            <td>R$ 800,00-</td>
+                            <td>R$ 1.000,00</td>
+                            <td>R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <th scope=" col-sm-2">12 horas</th>
+                            <td> R$ 9.000,00</td>
+                            <td>R$ 11.000,00</td>
+                            <td>R$ 13.000,00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="text-center mt-4">
+                        <p>Descontos Progressivos:</p>
+                        <ul>
+                            <li>Assinatura Mensal: 0% de desconto</li>
+                            <li>Assinatura Trimestral (3 meses): 5% de desconto no valor total</li>
+                            <li>Assinatura Semestral (6 meses): 10% de desconto no valor total</li>
+                            <li>Assinatura Anual (12 meses): 15% de desconto no valor total</li>
+                        </ul>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary center" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                            Detalhe
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Taxa por Hora Extra</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">Tabela fixa</div>
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">3 horas = R$ 10,00</li>
+                                            <li class="list-group-item">6 horas =R$ 15,00</li>
+                                            <li class="list-group-item">12horas =R$ 20,00</li>
+                                        </ul>
+                                    </div>
+
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text">Ultrapassar o contrato gera taxas para equilibrar recursos e manter a eficiência operacional.
+                                        Contamos com a compreensão de todos para o cumprimento das condições contratuais. Atenciosamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </div>
+
+
+
+    <div class="m-4 pb-4"></div>
+
+</main>
+
+<footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>&copy; 2023 Estacionamento. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>
